@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarChart", "StarChart\StarChart.csproj", "{DA046F75-8FAB-446A-B4D8-537B1621FFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarChartTests", "StarChartTests\StarChartTests.csproj", "{B82465C7-CC31-4621-8447-2DAC536DA5B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA046F75-8FAB-446A-B4D8-537B1621FFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA046F75-8FAB-446A-B4D8-537B1621FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA046F75-8FAB-446A-B4D8-537B1621FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA046F75-8FAB-446A-B4D8-537B1621FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B82465C7-CC31-4621-8447-2DAC536DA5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B82465C7-CC31-4621-8447-2DAC536DA5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B82465C7-CC31-4621-8447-2DAC536DA5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B82465C7-CC31-4621-8447-2DAC536DA5B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
