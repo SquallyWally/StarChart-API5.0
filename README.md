@@ -7,9 +7,10 @@ This will cover using EntityFramework to retrieve, add, update, and remove data 
 
 ## Extra features after the migration?
 
--Authentication
--Refactor to allow binaries ( two objects that orbit each other)
--Caching
--Database
--Front end ( either in Angular or C# )
--Eventual migration to .Net 6
+* Authentication
+* Refactor to allow binaries ( two objects that orbit each other)
+* Caching
+* Database
+* Front end ( either in Angular or C# )
+* Eventual migration to .Net 6
+* R Support
