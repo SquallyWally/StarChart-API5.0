@@ -5,7 +5,7 @@ The Build a Starchart Web API using .NET 5.0 that will be migrated from its ASP.
 This will cover using EntityFramework to retrieve, add, update, and remove data from an in memory database and making it accessible via a web service.
 
 
-##Extra features after the migration?
+## Extra features after the migration?
 
 -Authentication
 -Refactor to allow binaries ( two objects that orbit each other)
