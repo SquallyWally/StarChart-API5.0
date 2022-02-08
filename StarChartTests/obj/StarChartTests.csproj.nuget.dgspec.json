@@ -1,31 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/milo_k/RiderProjects/StarChart-API5.0/StarChartTests/StarChartTests.csproj": {}
+    "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChartTests\\StarChartTests.csproj": {}
   },
   "projects": {
-    "/Users/milo_k/RiderProjects/StarChart-API5.0/StarChartTests/StarChartTests.csproj": {
+    "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChartTests\\StarChartTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/milo_k/RiderProjects/StarChart-API5.0/StarChartTests/StarChartTests.csproj",
+        "projectUniqueName": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChartTests\\StarChartTests.csproj",
         "projectName": "StarChartTests",
-        "projectPath": "/Users/milo_k/RiderProjects/StarChart-API5.0/StarChartTests/StarChartTests.csproj",
-        "packagesPath": "/Users/milo_k/.nuget/packages/",
-        "outputPath": "/Users/milo_k/RiderProjects/StarChart-API5.0/StarChartTests/obj/",
+        "projectPath": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChartTests\\StarChartTests.csproj",
+        "packagesPath": "C:\\Users\\mlk_s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChartTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/milo_k/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mlk_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\StarChart.csproj": {
+                "projectPath": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\StarChart.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,9 +47,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -70,11 +91,92 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/milo_k/.dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\StarChart.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\StarChart.csproj",
+        "projectName": "StarChart",
+        "projectPath": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\StarChart.csproj",
+        "packagesPath": "C:\\Users\\mlk_s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mlk_s\\RiderProjects\\StarChart-API5.0\\StarChart\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mlk_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.13, )"
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
