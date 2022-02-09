@@ -32,7 +32,7 @@ namespace StarChartTests
 
             var optionsBuilder = new DbContextOptionsBuilder();
             optionsBuilder.UseInMemoryDatabase("Test");
-            var context = new ApplicationDbContext((DbContextOptions<ApplicationDbContext>) optionsBuilder.Options);
+            var context = new ApplicationDbContext( optionsBuilder.Options);
 
             var celestialController = Activator.CreateInstance(controller, new object[] { context });
 
@@ -74,8 +74,8 @@ namespace StarChartTests
 
             var optionsBuilder = new DbContextOptionsBuilder();
             optionsBuilder.UseInMemoryDatabase("Test2");
-            var context = new ApplicationDbContext((DbContextOptions<ApplicationDbContext>) optionsBuilder.Options);
-
+            var context = new ApplicationDbContext( optionsBuilder.Options);
+            
             var celestialController = Activator.CreateInstance(controller, new object[] { context });
 
             context.Add(item);
@@ -118,8 +118,7 @@ namespace StarChartTests
 
             var optionsBuilder = new DbContextOptionsBuilder();
             optionsBuilder.UseInMemoryDatabase("Test3");
-            var context = new ApplicationDbContext(optionsBuilder.Options as DbContextOptions<ApplicationDbContext>);
-
+            var context = new ApplicationDbContext( optionsBuilder.Options);
             var celestialController = Activator.CreateInstance(controller, new object[] { context });
 
             context.Add(item);

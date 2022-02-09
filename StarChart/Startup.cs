@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,7 +23,7 @@ namespace StarChart
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddMvc();
+            services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase("StarChart"));
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "StarChart", Version = "v1"}); });
         }

@@ -25,6 +25,7 @@ namespace StarChartTests
             var filePath = ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + "StarChart" + Path.DirectorySeparatorChar + "Models" + Path.DirectorySeparatorChar + "CelestialObject.cs";
             Assert.True(File.Exists(filePath), "`CelestialObject.cs` was not found in the `Models` directory.");
 
+            //var model = TestHelpers.GetUserType("StarChart.Models.CelestialObject");
             var model = TestHelpers.GetUserType("StarChart.Models.CelestialObject");
             Assert.True(model != null, "A `public` class `CelestialObject` was not found in the `StarChart.Models` namespace.");
 
